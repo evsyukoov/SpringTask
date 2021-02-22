@@ -1,0 +1,14 @@
+com/service/ExchangeRatesComparator.java
+ com.service.ExchangeRatesComparator
+com/service/WebApplication.java
+ com.service.WebApplication
+com/service/FeignClient/ImageClient.java
+ com.service.FeignClient.ImageClient
+com/service/FeignClient/ExchangeClient.java
+ com.service.FeignClient.ExchangeClient
+com/service/FeignData/ExchangeData.java
+ com.service.FeignData.ExchangeData
+com/service/FeignData/ImageData/ImageData.java
+ com.service.FeignData.ImageData.ImageData
+com/service/FeignData/ImageData/Data.java
+ com.service.FeignData.ImageData.Data
