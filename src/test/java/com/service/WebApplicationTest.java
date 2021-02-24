@@ -15,4 +15,5 @@ public class WebApplicationTest {
     public void contextLoads() throws Exception {
         assertThat(app).isNotNull();
     }
+
 }

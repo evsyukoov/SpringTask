@@ -4,9 +4,9 @@ plugins {
     id 'java'
 }
 
-group = 'com.example'
+group = 'com.service'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '8'
 
 repositories {
     mavenCentral()
@@ -20,8 +20,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-devtools'
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    implementation 'com.google.code.gson:gson:2.8.6'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testCompile "com.github.tomakehurst:wiremock:2.27.2"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
 
 dependencyManagement {
