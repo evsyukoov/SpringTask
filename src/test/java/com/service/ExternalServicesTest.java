@@ -3,7 +3,7 @@ package com.service;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
-import com.service.controller.MainController;
+import com.service.controller.ApiController;
 import com.service.feignclient.ExchangeClient;
 import com.service.feignclient.ImageClient;
 import com.service.feigndata.ExchangeData;
@@ -29,7 +29,7 @@ public class ExternalServicesTest {
     ImageClient imageMock = mock(ImageClient.class);
 
 
-    MainController mainController = new MainController(currency);
+    ApiController apiController = new ApiController(currency);
 
     private String getYesterdayDate()
     {
@@ -55,7 +55,7 @@ public class ExternalServicesTest {
                 ImageData.class);
         Mockito.when(imageMock.getImage("rich")).thenReturn(imageRich);
         Mockito.when(imageMock.getImage("broke")).thenReturn(imageBroke);
-        RedirectView rv = (RedirectView)mainController.getDataFromServices(exchangeMock, imageMock, "EUR");
+        RedirectView rv = (RedirectView) apiController.getDataFromServices(exchangeMock, imageMock, "EUR");
         assertEquals("https://media0.giphy.com/media/d2rSV6YRv3DxJRkF0O/giphy.gif", rv.getUrl());
     }
 
@@ -76,7 +76,7 @@ public class ExternalServicesTest {
                 ImageData.class);
         Mockito.when(imageMock.getImage("rich")).thenReturn(imageRich);
         Mockito.when(imageMock.getImage("broken")).thenReturn(imageBroke);
-        RedirectView rv = (RedirectView)mainController.getDataFromServices(exchangeMock, imageMock, "EUR");
+        RedirectView rv = (RedirectView) apiController.getDataFromServices(exchangeMock, imageMock, "EUR");
         assertEquals("https://media4.giphy.com/media/ehraVuPSZddEl5LW1x/giphy.gif", rv.getUrl());
     }
 

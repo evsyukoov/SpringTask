@@ -1,0 +1,17 @@
+ body {
+    width: 35em;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+.hide::before {
+    content: "+";
+}
+
+.show::before {
+    content: "-";
+}

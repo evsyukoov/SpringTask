@@ -8,7 +8,6 @@ RUN rm -rf gradle.zip
 ENV PATH=${PATH}://gradle-6.8.3/bin
 
 COPY . /Application
-COPY build/libs/ExchangeService-0.0.1-SNAPSHOT.jar /app.jar
 EXPOSE 8080
 ENV TEST=0
 COPY start.sh /start.sh

@@ -34,10 +34,13 @@ docker build . -t service
     
       http://localhost/compare/eur
       http://localhost/compare/usd
+      http://localhost/compare/AFN
       
 ###  Коды возврата
 
-1) 400 Bad Request - любой запрос к сервису, не указанный в документации
+1) 400 Bad Request - запрос к сервису c неправильным кодом валюты
+
+2) 404 Not found - любой запрос не указанный в документации
 
 2) 500 Internal Server Error - любые ошибки на внешних сервисах, кроме 429
 
