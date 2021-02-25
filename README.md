@@ -19,7 +19,7 @@ docker build . -t service
 
 ###  Документация к API сервиса
 
-1) GET / - доступ к документации
+1) GET / - главная страница сервиса
 
 2) GET /compare/currency_code - основной функционал
 
