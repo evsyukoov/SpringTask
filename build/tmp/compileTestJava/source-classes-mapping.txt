@@ -1,8 +1,0 @@
-com/service/WebApplicationTest.java
- com.service.WebApplicationTest
-com/service/ExchangeRatesComparatorTest.java
- com.service.ExchangeRatesComparatorTest
-com/service/ExternalServicesTest.java
- com.service.ExternalServicesTest
-com/service/MainControllerTest.java
- com.service.MainControllerTest

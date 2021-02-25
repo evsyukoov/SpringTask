@@ -2,8 +2,8 @@ com/service/ExchangeRatesComparator.java
  com.service.ExchangeRatesComparator
 com/service/WebApplication.java
  com.service.WebApplication
-com/service/feignclient/ExchangeClient.java
- com.service.feignclient.ExchangeClient
+com/service/controller/MainController.java
+ com.service.controller.MainController
 com/service/feigndata/ExchangeData.java
  com.service.feigndata.ExchangeData
 com/service/feigndata/ImageData/Data.java
@@ -12,5 +12,5 @@ com/service/feigndata/ImageData/ImageData.java
  com.service.feigndata.ImageData.ImageData
 com/service/feignclient/ImageClient.java
  com.service.feignclient.ImageClient
-com/service/controller/MainController.java
- com.service.controller.MainController
+com/service/feignclient/ExchangeClient.java
+ com.service.feignclient.ExchangeClient

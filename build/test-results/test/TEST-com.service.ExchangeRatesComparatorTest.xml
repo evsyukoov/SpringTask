@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.service.ExchangeRatesComparatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-02-25T09:15:17" hostname="MacBook-Pro-Denis.local" time="0.005">
-  <properties/>
-  <testcase name="compareTest()" classname="com.service.ExchangeRatesComparatorTest" time="0.003"/>
-  <testcase name="compareTest2()" classname="com.service.ExchangeRatesComparatorTest" time="0.0"/>
-  <testcase name="compareTest3()" classname="com.service.ExchangeRatesComparatorTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
