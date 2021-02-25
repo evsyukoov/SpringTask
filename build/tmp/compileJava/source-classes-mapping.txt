@@ -1,5 +1,5 @@
-com/service/feignclient/ImageClient.java
- com.service.feignclient.ImageClient
+com/service/ExchangeRatesComparator.java
+ com.service.ExchangeRatesComparator
 com/service/WebApplication.java
  com.service.WebApplication
 com/service/feignclient/ExchangeClient.java
@@ -10,7 +10,7 @@ com/service/feigndata/ImageData/Data.java
  com.service.feigndata.ImageData.Data
 com/service/feigndata/ImageData/ImageData.java
  com.service.feigndata.ImageData.ImageData
-com/service/ExchangeRatesComparator.java
- com.service.ExchangeRatesComparator
+com/service/feignclient/ImageClient.java
+ com.service.feignclient.ImageClient
 com/service/controller/MainController.java
  com.service.controller.MainController

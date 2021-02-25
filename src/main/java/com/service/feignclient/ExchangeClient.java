@@ -4,6 +4,8 @@ import com.service.feigndata.ExchangeData;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+//curl -v https://openexchangerates.org/api/latest.json\?app_id\=30dc03f0ff7148cdbf3911c72e517c4a\&symbols\=RUB,EUR
+
 @FeignClient(url="${exchange.address}", name = "exchangeclient")
 public interface ExchangeClient {
 

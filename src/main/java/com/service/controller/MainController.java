@@ -23,7 +23,6 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping
-@EnableFeignClients
 public class MainController {
 
     @Autowired
@@ -71,7 +70,7 @@ public class MainController {
         return getDataFromServices(exchangeClient, imageClient, code);
     }
 
-    public  Object getDataFromServices(ExchangeClient exchangeClient, ImageClient imageClient, String code)
+    public  RedirectView getDataFromServices(ExchangeClient exchangeClient, ImageClient imageClient, String code)
     {
         ExchangeData curr;
         ExchangeData yesterday;
@@ -99,7 +98,6 @@ public class MainController {
             throw analizeFeignExceptionCode(e, "GiphyAPI");
         }
         RedirectView redirectView = new RedirectView();
-        redirectView.setStatusCode(HttpStatus.PERMANENT_REDIRECT);
         redirectView.setUrl(imgData.getData().getImage_url());
         return redirectView;
     }
